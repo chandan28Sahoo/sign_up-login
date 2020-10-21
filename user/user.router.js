@@ -1,9 +1,3 @@
-const creatUser=require("./user.controler");
-const router =require('express').Router();
-router.post('/',creatUser);
-module.exports=router;
-
-
 module.exports = function(router,jwt){
     router.post('/sign',(req,res)=>{
         let user = {
